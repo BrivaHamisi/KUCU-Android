@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".HomeActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <com.gauravk.bubblenavigation.BubbleNavigationConstraintView
+        android:id="@+id/bottom_navigation_view_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:elevation="18dp"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/l_item_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:bt_active="true"
+            app:bt_colorActive="@color/custom_color_primary"
+            app:bt_colorInactive="@color/custom_color_secondary_light"
+            app:bt_icon="@drawable/ic_round_home_24"
+            app:bt_title="@string/home" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/l_item_dashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:bt_active="true"
+            app:bt_colorActive="@color/custom_color_primary"
+            app:bt_colorInactive="@color/custom_color_secondary_light"
+            app:bt_icon="@drawable/ic_round_dashboard_24"
+            app:bt_title="Dashboard" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/l_item_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:bt_active="true"
+            app:bt_colorActive="@color/custom_color_primary"
+            app:bt_colorInactive="@color/custom_color_secondary_light"
+            app:bt_icon="@drawable/ic_round_account_circle_24"
+            app:bt_title="Profile" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/l_item_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:bt_active="true"
+            app:bt_colorActive="@color/custom_color_primary"
+            app:bt_colorInactive="@color/custom_color_secondary_light"
+            app:bt_icon="@drawable/ic_round_help_24"
+            app:bt_title="Help?" />
+
+        <!-- Add more child items here - max upto 5 -->
+
+    </com.gauravk.bubblenavigation.BubbleNavigationConstraintView>
+
+
+</RelativeLayout>
