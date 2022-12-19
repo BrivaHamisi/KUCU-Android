@@ -33,23 +33,21 @@ class HomeActivity : AppCompatActivity() {
             when (position) {
                 0 -> {
                     supportFragmentManager.beginTransaction().replace(R.id.fragment_container, homeFragment).commit()
-                    true
 
                 }
                 1 -> {
                     supportFragmentManager.beginTransaction().replace(R.id.fragment_container, dashboardFragment).commit()
-                    true
                 }
                  2 -> {
                     //startActivity(Intent(this@HomeActivity,BsGuidesActivity::class.java))
                     supportFragmentManager.beginTransaction().replace(R.id.fragment_container, profileFragment).commit()
-                    true
                 }
                 3 -> {
                     supportFragmentManager.beginTransaction().replace(R.id.fragment_container,helpFragment).commit()
-                    true
                 }
-                else -> false
+                else -> {
+
+                }
             }
         }
 
